@@ -1,0 +1,22 @@
+{
+  "name": "twitter-desktop",
+  "version": "1.0.0",
+  "description": "Twitter Bot",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkaragoz/Twitter-Desktop.git"
+  },
+  "author": "gkaragoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkaragoz/Twitter-Desktop/issues"
+  },
+  "homepage": "https://github.com/gkaragoz/Twitter-Desktop#readme",
+  "devDependencies": {
+    "electron": "6.0.2"
+  }
+}
