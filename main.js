@@ -10,15 +10,18 @@ let win
 function createWindow() {
     // Create the browser window.
     win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1280,
+        height: 720,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        resizable: false
     })
 
+    win.setMenuBarVisibility(false)
+
     // and load the index.html of the app.
-    win.loadFile('./src/index.html')
+    win.loadFile('./src/Login_v16/index.html')
 
     // Open the DevTools.
     win.webContents.openDevTools()
@@ -30,31 +33,6 @@ function createWindow() {
         // when you should delete the corresponding element.
         win = null
     })
-
-    let menu = Menu.buildFromTemplate([
-        {
-            label: 'Menu',
-            submenu: [
-                { 
-                    label: 'Help' 
-                },
-                {
-                    type: 'separator'
-                },
-                { 
-                    label: 'Exit',
-                    click() {
-                        app.quit()
-                    }
-                }
-            ]
-        },
-        {
-            label: 'Login'
-        }
-    ])
-
-    Menu.setApplicationMenu(menu)
 }
 
 // This method will be called when Electron has finished

@@ -18,5 +18,8 @@
   "homepage": "https://github.com/gkaragoz/Twitter-Desktop#readme",
   "devDependencies": {
     "electron": "6.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
   }
 }
