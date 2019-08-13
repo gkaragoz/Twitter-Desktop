@@ -13,7 +13,7 @@ function createWindow() {
         width: 1280,
         height: 720,
         webPreferences: {
-            nodeIntegration: true
+            devTools: false
         },
         resizable: false
     })
@@ -24,7 +24,7 @@ function createWindow() {
     win.loadFile('./src/Login_v16/index.html')
 
     // Open the DevTools.
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 
     // Emitted when the window is closed.
     win.on('closed', () => {
